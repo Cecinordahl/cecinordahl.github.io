@@ -5,15 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rapport</title>
-    <link rel="stylesheet" href="Menu.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="text-align: center"><div class="content">
-    <h2>Rapport</h2>
+<body style="text-align: center">
+<div class="rapport-content">
+    <h1>Rapport</h1>
 
-    <p>Her kommer rapport</p>
+    <p>Noen av forberedelsene vi tok før og underveis i utviklingen av nettsiden var blant annet å lese oss opp hvordan man
+        på best mulig måte oppnådde en god tilgjengelighet for både søkemotorer og mennesker. En av de første tingene vi så
+        på var å sørge for at nettsiden var strukturert riktig i sine forskjellige regioner/deler, slik at nettleseren lett
+        kunne identifisere hva som er hva på nettsiden. Derfor brukte vi < header > og < main > elementet på alle sidene våre innenfor
+        nettsiden. I < header > la vi navnet på restauranten i en < h1 > tag da vi anså navnet på restauranten som den viktigste
+        headingen på hele nettsiden.  Her la vi også til navigeringsmenyen slik at den ikke blandet seg med main-innholdet og
+        holdt seg oversiktlig på toppen av siden. Navigeringsmenyen har vi gjort identifiserbar med en  < nav > tag som ligger
+        strukturert i form av en uordnet liste.</p>
 
+    <p>For at nettleseren enkelt skulle navigere seg gjennom innholdet i menyen brukte vi heading-taggene på en måte som møtte
+        WCAG sine retningslinjer. En h2 tag deler inn de forskjellige måltidene i seksjoner; lunsj, middag og dessert. Under
+        denne tagen følger en < h3 > tag tar for seg de forskjellige rettene i hver seksjon. Vi brukte en ny < h1 > tag i bodyen
+        av koden i tillegg til den vi hadde fungerende som logo/header til restauranten, men etter å lest gjennom WCAG sine
+        retningslinjer så tolket vi det slik at det var greit så lenge det var en ny seksjon. Oppsummert brukte vi altså < h1 >
+        to ganger, som forskjellige headinger på de forskjellige sidene av nettsiden og som fungerende logo som gikk igjen over hele nettsiden.</p>
 
-
+    <p>Etter å ha sjekket koden gjennom AChecker har siden ingen kjente problemer eller sannsynlige problemer. Den har derimot
+        noen potensielle problemer, men etter å ha gått igjennom disse består de fleste pass/fail-testen. Noen av problemene var
+        litt for kompliserte til at vi skjønte fremgangsmåten for hvordan det skulle fikses eller forbedres. Blant annet det
+        responsive designet på siden. Det er en nettside som er vanskelig å bruke på mobil. Når vi sjekket hvordan det var å se
+        på siden vertikalt på mobil, så ble mye av designet på nettsiden ødelagt. Ser man horisontalt på mobilskjermen så fungerte
+        det bedre, men heller ikke her var det optimalt. Vi mistenker at det er problemer med marginer og paddinger, men igjen så
+        det ble litt for komplisert til at vi visste hvordan vi skulle gå frem for å fikse det. I og med at programmet ikke oppdaget
+        verken kjente eller sannsynlige problemer under sjekk, så valgte vi å ikke lage en versjon nummer to. Vi sjekket også både
+        HTML og CSS validering og heller ikke her var det noen problemer.
+    </p>
 </div>
 </body>
 </html>
